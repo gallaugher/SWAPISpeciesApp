@@ -12,9 +12,12 @@
 		3E30BF00212221D100B6B822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E30BEFE212221D100B6B822 /* Main.storyboard */; };
 		3E30BF02212221D300B6B822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E30BF01212221D300B6B822 /* Assets.xcassets */; };
 		3E30BF05212221D300B6B822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E30BF03212221D300B6B822 /* LaunchScreen.storyboard */; };
+		3E30BF0D2122221300B6B822 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30BF0C2122221300B6B822 /* Species.swift */; };
+		B5A81833B57C710682C0E60D /* Pods_SWAPI_Species.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C27844DD9027064EBC28CA /* Pods_SWAPI_Species.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2342F24D34B2F8F610D4184D /* Pods-SWAPI-Species.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPI-Species.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPI-Species/Pods-SWAPI-Species.release.xcconfig"; sourceTree = "<group>"; };
 		3E30BEF7212221D100B6B822 /* SWAPI-Species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SWAPI-Species.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E30BEFA212221D100B6B822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E30BEFC212221D100B6B822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		3E30BF01212221D300B6B822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E30BF04212221D300B6B822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E30BF06212221D300B6B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E30BF0C2122221300B6B822 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		4DD37E8CB17BE0296B8E19DF /* Pods-SWAPI-Species.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPI-Species.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPI-Species/Pods-SWAPI-Species.debug.xcconfig"; sourceTree = "<group>"; };
+		67C27844DD9027064EBC28CA /* Pods_SWAPI_Species.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWAPI_Species.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A81833B57C710682C0E60D /* Pods_SWAPI_Species.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38686793D679DBE1A2BFB343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67C27844DD9027064EBC28CA /* Pods_SWAPI_Species.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E30BEEE212221D100B6B822 = {
 			isa = PBXGroup;
 			children = (
 				3E30BEF9212221D100B6B822 /* SWAPI-Species */,
 				3E30BEF8212221D100B6B822 /* Products */,
+				BC848709E93B94028BE57F43 /* Pods */,
+				38686793D679DBE1A2BFB343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3E30BEFA212221D100B6B822 /* AppDelegate.swift */,
+				3E30BF0C2122221300B6B822 /* Species.swift */,
 				3E30BEFC212221D100B6B822 /* ViewController.swift */,
 				3E30BEFE212221D100B6B822 /* Main.storyboard */,
 				3E30BF01212221D300B6B822 /* Assets.xcassets */,
@@ -64,6 +82,15 @@
 			path = "SWAPI-Species";
 			sourceTree = "<group>";
 		};
+		BC848709E93B94028BE57F43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD37E8CB17BE0296B8E19DF /* Pods-SWAPI-Species.debug.xcconfig */,
+				2342F24D34B2F8F610D4184D /* Pods-SWAPI-Species.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E30BF09212221D300B6B822 /* Build configuration list for PBXNativeTarget "SWAPI-Species" */;
 			buildPhases = (
+				FB3DED812127065BE6E29CC7 /* [CP] Check Pods Manifest.lock */,
 				3E30BEF3212221D100B6B822 /* Sources */,
 				3E30BEF4212221D100B6B822 /* Frameworks */,
 				3E30BEF5212221D100B6B822 /* Resources */,
+				68EB5A941BAC08AF133B446D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68EB5A941BAC08AF133B446D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SWAPI-Species/Pods-SWAPI-Species-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWAPI-Species/Pods-SWAPI-Species-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3DED812127065BE6E29CC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWAPI-Species-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E30BEF3212221D100B6B822 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E30BEFD212221D100B6B822 /* ViewController.swift in Sources */,
+				3E30BF0D2122221300B6B822 /* Species.swift in Sources */,
 				3E30BEFB212221D100B6B822 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +351,7 @@
 		};
 		3E30BF0A212221D300B6B822 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD37E8CB17BE0296B8E19DF /* Pods-SWAPI-Species.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		3E30BF0B212221D300B6B822 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2342F24D34B2F8F610D4184D /* Pods-SWAPI-Species.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
